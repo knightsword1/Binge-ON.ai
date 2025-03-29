@@ -13,16 +13,16 @@ If you are developing a production application, we recommend using TypeScript an
 
 # Features of the Project
 
-Login/Sign Up
-Sign In/ Sign Up Form
-redirect to Browse Page
-Browse (after authentication)
-Header
-Main Movie
-Trailer in Background
-Title & Description
-Movie Suggestions
-MovieLists\*N
-NetflixGPT
-Search Bar
-Movie Suggestions
+-Login/Sign Up
+    -Sign In/ Sign Up Form
+    -Redirect to Browse Page
+-Browse (after authentication)
+    -Header
+    -Main Movie
+        -Trailer in Background
+        -Title & Description
+        -Movie Suggestions
+            -MovieLists*N
+-NetflixGPT
+    -Search Bar
+    -Movie Suggestions
