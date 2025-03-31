@@ -11,18 +11,24 @@ Currently, two official plugins are available:
 
 If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
+# Netflix - GPT : Features added
+
+- Header
+- Login Form
+- Sign Up Form
+
 # Features of the Project
 
 -Login/Sign Up
-    -Sign In/ Sign Up Form
-    -Redirect to Browse Page
+-Sign In/ Sign Up Form
+-Redirect to Browse Page
 -Browse (after authentication)
-    -Header
-    -Main Movie
-        -Trailer in Background
-        -Title & Description
-        -Movie Suggestions
-            -MovieLists*N
+-Header
+-Main Movie
+-Trailer in Background
+-Title & Description
+-Movie Suggestions
+-MovieLists\*N
 -NetflixGPT
-    -Search Bar
-    -Movie Suggestions
+-Search Bar
+-Movie Suggestions
