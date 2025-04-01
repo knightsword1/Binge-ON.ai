@@ -14,8 +14,17 @@ If you are developing a production application, we recommend using TypeScript an
 # Netflix - GPT : Features added
 
 - Header
+- Routing of App
 - Login Form
 - Sign Up Form
+- Form Validation
+- Firebase Setup
+- Deploying the app to production
+- Create SignUp User Account
+- Implement Sign In User API
+- Created Redux Store with userSlice
+- Implemented Sign Out
+- Update Profile
 
 # Features of the Project
 
