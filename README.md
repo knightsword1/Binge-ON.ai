@@ -25,6 +25,22 @@ If you are developing a production application, we recommend using TypeScript an
 - Created Redux Store with userSlice
 - Implemented Sign Out
 - Update Profile
+- Bugfix : Sign Up user displayName and profile picture update
+- Bugfix : If the user is not logged in redirect/browse to Login Page and vice-versa
+- Unsubscribe to the onAuthStateChanged callback
+- Add hardcoded values to the constants file
+- Register TMDB website and create an app and get API read access token and API key
+- Get data from TMDB 'Now Playing' movies list API
+- Custom Hook useNowPlayingMovies
+- Create Movie Slice
+- Update store with movies data
+- Built two components -> Main container and Secondary container
+- Fetch Data for Trailer Video
+- Update Store with Trailer Video Data
+- Built VideoBackground and VideoTitle
+- Embedded the Youtube video and made it autoplay and mute
+- Created custom hook useMovieTrailer
+- Used Tailwind to make our project look asthetically pleasing
 
 # Features of the Project
 
@@ -37,7 +53,7 @@ If you are developing a production application, we recommend using TypeScript an
 -Trailer in Background
 -Title & Description
 -Movie Suggestions
--MovieLists\*N
+-MovieLists \* N
 -NetflixGPT
 -Search Bar
 -Movie Suggestions

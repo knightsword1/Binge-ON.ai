@@ -3,9 +3,9 @@ import Header from './Header'
 import { checkValidData } from '../utils/validate';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth } from "../utils/firebase"
-import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice';
+import { USER_AVATAR } from '../utils/constants';
 
 const Login = () => {
 
@@ -14,7 +14,7 @@ const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
 
-  const navigate = useNavigate();
+
   const dispatch = useDispatch();
 
 
@@ -58,20 +58,20 @@ const Login = () => {
           // Signed up 
           const user = userCredential.user;
           updateProfile(user, {
-            displayName: name.current.value, photoURL: "https://wallpapers.com/images/high/pikachu-face-illustration-x8q0l4i7d7osqs2h.png"
+            displayName: name.current.value, photoURL: USER_AVATAR
           }).then(() => {
             // Profile updated!
             // Now dispatch the action
             const { uid, email, displayName, photoURL } = auth.currentUser;
             dispatch(addUser({ uid: uid, email: email, displayName: displayName, photoURL: photoURL }));
-            navigate("/browse");
+
             // ...
           }).catch((error) => {
             // An error occurred
             setErrorMessage(error.message);
             // ...
           });
-          console.log(user);
+
 
 
           // ...
@@ -91,7 +91,7 @@ const Login = () => {
           // Signed in 
           const user = userCredential.user;
           console.log(user);
-          navigate("/browse");
+
 
           // ...
         })
