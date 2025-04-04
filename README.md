@@ -41,6 +41,14 @@ If you are developing a production application, we recommend using TypeScript an
 - Embedded the Youtube video and made it autoplay and mute
 - Created custom hook useMovieTrailer
 - Used Tailwind to make our project look aesthetically pleasing
+- Built Secondary Component
+- Built Movie List
+- Built Movie Card
+- TMDB Image CDN URL
+- Created custom hook usePopularMovies
+- GPT search Page
+- GPT Search Bar
+- Multi-language Feature in our app
 
 # Features of the Project
 
