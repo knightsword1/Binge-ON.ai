@@ -40,7 +40,7 @@ If you are developing a production application, we recommend using TypeScript an
 - Built VideoBackground and VideoTitle
 - Embedded the Youtube video and made it autoplay and mute
 - Created custom hook useMovieTrailer
-- Used Tailwind to make our project look asthetically pleasing
+- Used Tailwind to make our project look aesthetically pleasing
 
 # Features of the Project
 
