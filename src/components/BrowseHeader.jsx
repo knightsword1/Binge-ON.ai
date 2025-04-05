@@ -5,7 +5,7 @@ import { auth } from "../utils/firebase";
 import { useDispatch, useSelector } from "react-redux";
 import { addUser, removeUser } from "../utils/userSlice";
 import { LOGO, SUPPORTED_LANGUAGES } from "../utils/constants";
-import { toggleGptSearchView } from "../utils/gptSlice";
+import { clearGptSlice, toggleGptSearchView } from "../utils/gptSlice";
 import { changeLanguage } from "../utils/configSlice";
 
 const BrowseHeader = () => {
@@ -58,6 +58,7 @@ const BrowseHeader = () => {
   const handleGPTSearchClick = () => {
     //Toggle GPT Search
     dispatch(toggleGptSearchView());
+    if (showGptSearch) dispatch(clearGptSlice());
   };
 
   const handleLanguageChange = (e) => {
