@@ -118,7 +118,7 @@ const Login = () => {
   };
 
   return (
-    <div className="relative h-screen w-full">
+    <div className="relative h-screen w-full object-cover">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img

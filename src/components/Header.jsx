@@ -1,14 +1,12 @@
-import { onAuthStateChanged } from 'firebase/auth';
-import React, { useEffect } from 'react'
-import { addUser, removeUser } from '../utils/userSlice';
-import { useDispatch } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
-import { auth } from '../utils/firebase';
-import { LOGO } from '../utils/constants';
-
+import { onAuthStateChanged } from "firebase/auth";
+import React, { useEffect } from "react";
+import { addUser, removeUser } from "../utils/userSlice";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { auth } from "../utils/firebase";
+import { LOGO } from "../utils/constants";
 
 const Header = () => {
-
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -17,14 +15,19 @@ const Header = () => {
       if (user) {
         // User is signed in
         const { uid, email, displayName, photoURL } = user;
-        dispatch(addUser({ uid: uid, email: email, displayName: displayName, photoURL: photoURL }));
+        dispatch(
+          addUser({
+            uid: uid,
+            email: email,
+            displayName: displayName,
+            photoURL: photoURL,
+          })
+        );
         navigate("/browse");
-
       } else {
         // User is signed out
         dispatch(removeUser());
         navigate("/");
-
       }
     });
 
@@ -32,14 +35,10 @@ const Header = () => {
     return () => unsubscribe();
   }, []);
   return (
-    <div className="absolute top-0 left-0 w-screen px-8 py-5 bg-gradient-to-b from-black z-10">
-      <img
-        className="w-44"
-        src={LOGO}
-        alt="Netflix Logo"
-      />
+    <div className="absolute top-0 left-0 w-screen px-8 py-5 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row">
+      <img className="w-44" src={LOGO} alt="Netflix Logo" />
     </div>
   );
 };
 
-export default Header
+export default Header;

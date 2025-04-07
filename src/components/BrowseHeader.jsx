@@ -66,8 +66,8 @@ const BrowseHeader = () => {
   };
 
   return (
-    <div className="absolute top-0 left-0 w-screen px-8 py-5 bg-gradient-to-b from-gray-800 z-10 flex justify-between items-center">
-      <img className="w-44" src={LOGO} alt="Netflix Logo" />
+    <div className="absolute top-0 left-0 w-screen px-8 py-5 bg-gradient-to-b from-gray-800 z-10 flex flex-col md:flex-row justify-between items-center">
+      <img className="w-44 mx-auto md:mx-0" src={LOGO} alt="Netflix Logo" />
       <div className="flex justify-between items-center">
         {showGptSearch && (
           <select
