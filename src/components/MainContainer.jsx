@@ -10,7 +10,8 @@ const MainContainer = () => {
 
   const mainMovie = movies[0];
 
-  const { original_title, overview, vote_average, id } = mainMovie;
+  const { original_title, overview, vote_average, id, genre_ids } = mainMovie;
+  //   console.log(genre_ids);
 
   return (
     <div className="pt-[30%] bg-black md:pt-0">
@@ -18,6 +19,7 @@ const MainContainer = () => {
         title={original_title}
         overview={overview}
         rating={vote_average}
+        genre={genre_ids}
       />
       <VideoBackground movieId={id} />
     </div>

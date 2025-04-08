@@ -36,7 +36,7 @@ const Header = () => {
   }, []);
   return (
     <div className="absolute top-0 left-0 w-screen px-8 py-5 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row">
-      <img className="w-44" src={LOGO} alt="Netflix Logo" />
+      <img className="w-44" src={LOGO} alt="Binge-ON Logo" />
     </div>
   );
 };

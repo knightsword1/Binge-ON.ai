@@ -1,5 +1,12 @@
-export const LOGO =
-  "https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png";
+export const LOGO = "https://i.imgur.com/pfDU2cJ.png";
+
+export const Star = "https://www.svgrepo.com/show/13695/star.svg";
+
+export const NEXT_SWIPE =
+  "https://icons.geosm.ge/point-right.svg?revision=6&color=grey";
+
+export const PREVIOUS_SWIPE =
+  "https://icons.geosm.ge/point-left.svg?revision=6&color=grey";
 
 export const USER_AVATAR =
   "https://wallpapers.com/images/high/pikachu-face-illustration-x8q0l4i7d7osqs2h.png";
