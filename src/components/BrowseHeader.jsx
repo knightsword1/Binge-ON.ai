@@ -43,7 +43,7 @@ const BrowseHeader = () => {
             photoURL: photoURL,
           })
         );
-        navigate("/browse");
+        navigate("/Browse");
       } else {
         // User is signed out
         dispatch(removeUser());

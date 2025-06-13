@@ -8,6 +8,7 @@ import {
 } from "firebase/auth";
 import { auth } from "../utils/firebase";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { addUser } from "../utils/userSlice";
 import { BG_URL, USER_AVATAR } from "../utils/constants";
 
@@ -18,6 +19,7 @@ const Login = () => {
   const [errorMessage, setErrorMessage] = useState(null);
 
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const email = useRef(null);
   const password = useRef(null);
@@ -66,24 +68,19 @@ const Login = () => {
             photoURL: USER_AVATAR,
           })
             .then(() => {
-              // Profile updated!
-              // Now dispatch the action
               const { uid, email, displayName, photoURL } = auth.currentUser;
               dispatch(
                 addUser({
-                  uid: uid,
-                  email: email,
-                  displayName: displayName,
-                  photoURL: photoURL,
+                  uid,
+                  email,
+                  displayName,
+                  photoURL,
                 })
               );
-
-              // ...
+              navigate("/Browse");
             })
             .catch((error) => {
-              // An error occurred
               setErrorMessage(error.message);
-              // ...
             });
 
           // ...

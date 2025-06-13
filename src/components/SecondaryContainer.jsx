@@ -8,18 +8,17 @@ const SecondaryContainer = () => {
   return (
     movies.nowPlayingMovies && (
       <div className="bg-black">
-        <div className="mt-0 md:-mt-36 pl-0 md:pl-7 relative z-20">
+        <div className="mt-0 md:-mt-36 pl-0 md:pl-7 relative z-20 font-medium font-serif">
           <MovieList title={"Now Playing"} movies={movies.nowPlayingMovies} />
-          <MovieList title={"Popular"} movies={movies.popularMovies} />
-          <MovieList
-            title={"Critically Acclaimed"}
-            movies={movies.nowPlayingMovies}
-          />
-          <MovieList title={"Horror"} movies={movies.nowPlayingMovies} />
-          <MovieList title={"Comedy"} movies={movies.nowPlayingMovies} />
-          <MovieList title={"Romance"} movies={movies.nowPlayingMovies} />
-          <MovieList title={"Thriller"} movies={movies.nowPlayingMovies} />
-          <MovieList title={"Anime"} movies={movies.nowPlayingMovies} />
+          {/* <MovieList title={"Popular"} movies={movies.popularMovies} /> */}
+          <MovieList title={"Top Rated"} movies={movies.topRatedMovies} />
+          <MovieList title={"Upcoming"} movies={movies.upcomingMovies} />
+          <MovieList title={"Anime"} movies={movies.animation} />
+          <MovieList title={"Documentary"} movies={movies.documentary} />
+          <MovieList title={"History"} movies={movies.history} />
+          <MovieList title={"Mystery"} movies={movies.mystery} />
+          <MovieList title={"Science Fiction"} movies={movies.scienceFiction} />
+          <MovieList title={"Thriller"} movies={movies.thriller} />
 
           {/* 
 
